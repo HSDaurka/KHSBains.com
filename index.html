@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kanwal Harjit Bains - Master Electrician</title>
+    <title>Kanwal Harjit Bains</title>
     <style>
         * {
             margin: 0;
@@ -283,64 +283,147 @@ nav {
             line-height: 1.8;
         }
 
-        /* About Section */
-        .about {
-            padding: 4rem 2rem;
-            background: white;
-        }
+        * About Section Container */
+.about-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
 
-        .about-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-            align-items: center;
-        }
+/* Header Section */
+.about-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
 
-        .about-content h2 {
-            color: #0066cc;
-            font-size: 2.5rem;
-            margin-bottom: 1.5rem;
-        }
+.about-header h2 {
+    font-size: 2.2em;
+    color: #004aad;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
 
-        .about-content p {
-            color: #666;
-            font-size: 1.05rem;
-            line-height: 1.8;
-            margin-bottom: 1.5rem;
-        }
+.intro-text {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.8;
+    max-width: 700px;
+    margin: 0 auto;
+}
 
-        .about-image {
-            width: 100%;
-            max-width: 350px;
-            aspect-ratio: 1;
-            background: rgba(0, 102, 204, 0.1);
-            border-radius: 15px;
-            border: 3px solid #0066cc;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-            margin: 0 auto;
-        }
+/* Services Grid */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
 
-        .about-image-placeholder {
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(135deg, rgba(0, 102, 204, 0.2), rgba(0, 102, 204, 0.1));
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 5rem;
-            color: rgba(0, 102, 204, 0.3);
-        }
+/* Service Card Styling */
+.service-card {
+    background: linear-gradient(135deg, #f0f8ff 0%, #e6f2ff 100%);
+    border-left: 5px solid #004aad;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 74, 173, 0.1);
+    transition: all 0.3s ease;
+}
 
-        .about-image-placeholder img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+.service-card:hover {
+    box-shadow: 0 8px 20px rgba(0, 74, 173, 0.2);
+    transform: translateY(-5px);
+}
+
+.card-icon {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    font-size: 1.4em;
+    color: #004aad;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.service-card ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.service-card li {
+    padding: 10px 0;
+    color: #555;
+    line-height: 1.6;
+    border-bottom: 1px solid rgba(0, 74, 173, 0.1);
+}
+
+.service-card li:last-child {
+    border-bottom: none;
+}
+
+.service-card strong {
+    color: #004aad;
+    font-weight: 600;
+}
+
+/* Why Choose Me Card */
+.why-choose-card {
+    background: linear-gradient(135deg, #fff8dc 0%, #fffacd 100%);
+    border-left: 5px solid #ffa500;
+    border-radius: 8px;
+    padding: 40px;
+    box-shadow: 0 4px 12px rgba(255, 165, 0, 0.1);
+    text-align: center;
+}
+
+.why-choose-card h3 {
+    font-size: 1.6em;
+    color: #004aad;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.benefits-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    text-align: left;
+}
+
+.benefits-list li {
+    color: #555;
+    line-height: 1.7;
+    font-size: 1.05em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-header h2 {
+        font-size: 1.8em;
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .service-card {
+        padding: 20px;
+    }
+    
+    .why-choose-card {
+        padding: 25px;
+    }
+    
+    .benefits-list {
+        grid-template-columns: 1fr;
+    }
+}
 
         /* Contact Section */
         .contact {
@@ -450,7 +533,7 @@ nav {
 <body>
     <!-- Navigation -->
     <nav>
-        <div class="logo">⚡ Master Electrician</div>
+        <div class="logo">⚡ Licensed Electrician</div>
     <div class="nav-right">
         
         <div class="contact-icons">
@@ -473,7 +556,7 @@ nav {
             <div class="hero-text">
                 <p class="hero-subtitle">Meet</p>
                 <h1>Kanwal Harjit Bains</h1>
-                <p>Professional Master Electrician with 15+ years of industry expertise. Providing reliable, safe, and efficient electrical solutions for residential and commercial projects.</p>
+                <p>Professional Licensed Electrician with 15+ years of industry expertise. Providing reliable, safe, and efficient electrical solutions for residential and commercial projects.</p>
                 <div class="hero-buttons">
                     <a href="tel:+1234567890" class="btn btn-call">📞 Call Now</a>
                     <a href="sms:+1234567890" class="btn btn-text">💬 Text Me</a>
@@ -503,11 +586,7 @@ nav {
                     <p>Complete home electrical installation, upgrades, and repairs.</p>
                 </div>
 
-                <div class="service-card">
-                    <div class="service-icon">🏢</div>
-                    <h3>Commercial Electrical</h3>
-                    <p>Industrial-grade solutions for businesses and commercial properties.</p>
-                </div>
+                
 
                 <div class="service-card">
                     <div class="service-icon">💡</div>
@@ -539,49 +618,65 @@ nav {
     <!-- About Section -->
     <section id="about" class="about">
     <div class="about-content">
+    <div class="about-header">
         <h2>About Kanwal Harjit Bains</h2>
-        <p>
-            With over 15 years of experience in the electrical industry, I provide professional, 
-            reliable, and affordable electrical solutions for residential and commercial properties. 
-            Whether you need emergency repairs, installations, or maintenance, I'm committed to 
-            delivering quality workmanship with excellent customer service.
-        </p>
+        <p class="intro-text">With over 15 years of experience in the electrical industry, I provide professional, reliable, and affordable electrical solutions for residential and commercial properties.</p>
+    </div>
+    
+    <div class="services-grid">
+        <!-- Service 1 -->
+        <div class="service-card">
+            <div class="card-icon">🔧</div>
+            <h3>Licensed Electrician Services</h3>
+            <ul>
+                <li><strong>Residential Electrical:</strong> Wiring, panel upgrades, outlet installations, lighting solutions</li>
+                <li><strong>Pot lights:</strong> Repair and install of pot lights </li>
+                <li><strong>Smoke alarms:</strong> Install and repair of smoke alarms and co alarms as per the standards </li>
+                <li><strong>Fan/light fixtures:</strong> Fan installation and repair including bath exhaust along with indoor lights installation</li>
+                <li><strong>Emergency Repairs:</strong> 24/7 emergency electrical services</li>
+                <li><strong>Safety Inspections:</strong> Full electrical system inspections and certifications</li>
+            </ul>
+        </div>
         
-        <h3>🔧 Master Electrician Services</h3>
-        <ul>
-            <li><strong>Residential Electrical:</strong> Wiring, panel upgrades, outlet installations, lighting solutions</li>
-            <li><strong>Commercial Electrical:</strong> Business installations, troubleshooting, maintenance contracts</li>
-            <li><strong>Emergency Repairs:</strong> 24/7 emergency electrical services</li>
-            <li><strong>Safety Inspections:</strong> Full electrical system inspections and certifications</li>
-        </ul>
+        <!-- Service 2 -->
+        <div class="service-card">
+            <div class="card-icon">🏠</div>
+            <h3>Home Renovation & Remodeling</h3>
+            <ul>
+                <li><strong>Kitchen & Bathroom Renovations:</strong> Complete electrical work for remodels</li>
+                <li><strong>Home Additions:</strong> New wiring and electrical systems for extensions</li>
+                <li><strong>Basement Finishing:</strong> Full electrical setup for finished basements</li>
+                <li><strong>Smart Home Installation:</strong> Automation, smart lighting, and energy management systems</li>
+            </ul>
+        </div>
         
-        <h3>🏠 Home Renovation & Remodeling Services</h3>
-        <ul>
-            <li><strong>Kitchen & Bathroom Renovations:</strong> Complete electrical work for remodels</li>
-            <li><strong>Home Additions:</strong> New wiring and electrical systems for extensions</li>
-            <li><strong>Basement Finishing:</strong> Full electrical setup for finished basements</li>
-            <li><strong>Smart Home Installation:</strong> Automation, smart lighting, and energy management systems</li>
-        </ul>
-        
-        <h3>🔨 General Handyman Electrical Services</h3>
-        <ul>
-            <li><strong>Light Fixture Replacement:</strong> Install chandeliers, ceiling fans, recessed lighting</li>
-            <li><strong>Outlet & Switch Installation:</strong> New outlets, switches, GFCI protection</li>
-            <li><strong>Appliance Installation:</strong> Connect ranges, dryers, dishwashers, water heaters</li>
-            <li><strong>Troubleshooting:</strong> Diagnose and fix electrical problems quickly</li>
-            <li><strong>Code Compliance:</strong> Ensure all work meets local electrical codes</li>
-        </ul>
-        
-        <h3>✨ Why Choose Me?</h3>
-        <ul>
-            <li>✅ Licensed Master Electrician with proven track record</li>
+        <!-- Service 3 -->
+        <div class="service-card">
+            <div class="card-icon">🔨</div>
+            <h3>General Handyman Services</h3>
+            <ul>
+                <li><strong>Light Fixture Replacement:</strong> Install chandeliers, ceiling fans, recessed lighting</li>
+                <li><strong>Outlet & Switch Installation:</strong> New outlets, switches, GFCI protection</li>
+                <li><strong>Appliance Installation:</strong> Connect ranges, dryers, dishwashers, water heaters</li>
+                <li><strong>Troubleshooting:</strong> Diagnose and fix electrical problems quickly</li>
+                <li><strong>Code Compliance:</strong> Ensure all work meets local electrical codes</li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- Why Choose Me Section -->
+    <div class="why-choose-card">
+        <div class="card-icon">✨</div>
+        <h3>Why Choose Me?</h3>
+        <ul class="benefits-list">
+            <li>✅ Licensed Electrician with proven track record</li>
             <li>✅ Fast, professional service with attention to detail</li>
             <li>✅ Transparent pricing with no hidden costs</li>
-            <li>✅ Fully insured and bonded for your protection</li>
             <li>✅ Available 24/7 for emergencies</li>
             <li>✅ Free estimates on all projects</li>
         </ul>
     </div>
+</div>
 </section>
 
 
