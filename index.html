@@ -17,30 +17,53 @@
             color: #333;
         }
 
-        /* Navigation */
-        nav {
-            background: #fff;
-            padding: 1.5rem 2rem;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+        /* Navigation Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #f0f8ff;
+    border-bottom: 2px solid #004aad;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
 
-        nav .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #0066cc;
-        }
+.logo {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #004aad;
+}
 
-        nav .name {
-            font-size: 1.1rem;
-            color: #333;
-            font-weight: 600;
-        }
+.nav-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+}
+
+.name {
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #333;
+    white-space: nowrap;
+}
+
+.contact-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.icon-link {
+    text-decoration: none;
+    font-size: 1.3em;
+    color: #004aad;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.icon-link:hover {
+    color: #002d7a;
+    transform: scale(1.1);
+}
 
         /* Hero Section */
         .hero {
@@ -405,6 +428,22 @@
             .about-content h2 {
                 font-size: 2rem;
             }
+            @media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    
+    .nav-right {
+        align-items: center;
+    }
+    
+    .name {
+        white-space: normal;
+    }
+}
+
         }
     </style>
 </head>
@@ -412,7 +451,20 @@
     <!-- Navigation -->
     <nav>
         <div class="logo">⚡ Master Electrician</div>
-        <div class="name">Kanwal Harjit Bains</div>
+    <div class="nav-right">
+        
+        <div class="contact-icons">
+            <a href="tel:+1234567890" class="icon-link" title="Call">
+                📞
+            </a>
+            <a href="sms:+1234567890" class="icon-link" title="Text">
+                💬
+            </a>
+            <a href="mailto:kanwal@masterelectrician.com" class="icon-link" title="Email">
+                ✉️
+            </a>
+        </div>
+    </div>
     </nav>
 
     <!-- Hero Section -->
@@ -432,8 +484,8 @@
                 <div class="image-container">
                     <div class="image-placeholder">
                         <!-- Replace with actual image: -->
-                        <!-- <img src="path/to/kanwal-photo.jpg" alt="Kanwal Harjit Bains"> -->
-                        👨‍🔧
+                        <img src="profile.jpg" alt="Kanwal Harjit Bains">
+                    
                     </div>
                 </div>
             </div>
@@ -485,34 +537,53 @@
     </section>
 
     <!-- About Section -->
-    <section class="about">
-        <div class="about-container">
-            <div class="about-content">
-                <h2>About Kanwal</h2>
-                <p>
-                    Kanwal Harjit Bains is a certified Master Electrician with over 15 years of hands-on experience in the electrical industry. With a deep commitment to safety, quality, and customer satisfaction, Kanwal specializes in both residential and commercial electrical projects.
-                </p>
-                <p>
-                    From complex commercial installations to residential home upgrades, every project is executed with precision and professionalism. Kanwal is licensed, insured, and bonded, ensuring peace of mind for every client.
-                </p>
-                <p>
-                    <strong>Certifications & Credentials:</strong><br>
-                    ✓ Licensed Master Electrician<br>
-                    ✓ Fully Insured & Bonded<br>
-                    ✓ 15+ Years Experience<br>
-                    ✓ Emergency Service Available
-                </p>
-            </div>
+    <section id="about" class="about">
+    <div class="about-content">
+        <h2>About Kanwal Harjit Bains</h2>
+        <p>
+            With over 15 years of experience in the electrical industry, I provide professional, 
+            reliable, and affordable electrical solutions for residential and commercial properties. 
+            Whether you need emergency repairs, installations, or maintenance, I'm committed to 
+            delivering quality workmanship with excellent customer service.
+        </p>
+        
+        <h3>🔧 Master Electrician Services</h3>
+        <ul>
+            <li><strong>Residential Electrical:</strong> Wiring, panel upgrades, outlet installations, lighting solutions</li>
+            <li><strong>Commercial Electrical:</strong> Business installations, troubleshooting, maintenance contracts</li>
+            <li><strong>Emergency Repairs:</strong> 24/7 emergency electrical services</li>
+            <li><strong>Safety Inspections:</strong> Full electrical system inspections and certifications</li>
+        </ul>
+        
+        <h3>🏠 Home Renovation & Remodeling Services</h3>
+        <ul>
+            <li><strong>Kitchen & Bathroom Renovations:</strong> Complete electrical work for remodels</li>
+            <li><strong>Home Additions:</strong> New wiring and electrical systems for extensions</li>
+            <li><strong>Basement Finishing:</strong> Full electrical setup for finished basements</li>
+            <li><strong>Smart Home Installation:</strong> Automation, smart lighting, and energy management systems</li>
+        </ul>
+        
+        <h3>🔨 General Handyman Electrical Services</h3>
+        <ul>
+            <li><strong>Light Fixture Replacement:</strong> Install chandeliers, ceiling fans, recessed lighting</li>
+            <li><strong>Outlet & Switch Installation:</strong> New outlets, switches, GFCI protection</li>
+            <li><strong>Appliance Installation:</strong> Connect ranges, dryers, dishwashers, water heaters</li>
+            <li><strong>Troubleshooting:</strong> Diagnose and fix electrical problems quickly</li>
+            <li><strong>Code Compliance:</strong> Ensure all work meets local electrical codes</li>
+        </ul>
+        
+        <h3>✨ Why Choose Me?</h3>
+        <ul>
+            <li>✅ Licensed Master Electrician with proven track record</li>
+            <li>✅ Fast, professional service with attention to detail</li>
+            <li>✅ Transparent pricing with no hidden costs</li>
+            <li>✅ Fully insured and bonded for your protection</li>
+            <li>✅ Available 24/7 for emergencies</li>
+            <li>✅ Free estimates on all projects</li>
+        </ul>
+    </div>
+</section>
 
-            <div class="about-image">
-                <div class="about-image-placeholder">
-                    <!-- Replace with actual image: -->
-                    <!-- <img src="path/to/kanwal-photo2.jpg" alt="Kanwal Harjit Bains"> -->
-                    👨‍🔧
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Contact Section -->
     <section class="contact">
